@@ -15,6 +15,6 @@ public class LifeCycle {
         }
         int y = 60;
         System.out.println(x); // 100
-        System.out.println(y); // 에러
+        System.out.println(y); // 60
     }
 }
