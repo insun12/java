@@ -47,6 +47,6 @@ public class ArithmeticOperator {
         System.out.println(value7); // 2
         System.out.println(value8); // 5
         System.out.println(value9); // 10
-        
+
     }
 }
