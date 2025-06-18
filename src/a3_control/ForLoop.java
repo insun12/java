@@ -1,4 +1,5 @@
 package a3_control;
+
 import java.util.Scanner;
 
 public class ForLoop {
@@ -13,6 +14,7 @@ public class ForLoop {
             System.out.println(i);
         }
         System.out.println("반복끝");
+
         for (int i = 10; i > 0; i--) {
             System.out.println(i);
         }
@@ -24,12 +26,32 @@ public class ForLoop {
         // System.out.println("무한루프");
         // }
         // 안전한 무한루프
-        Scanner scanner = new Scanner(System.in);
-        for ( ; ; ) {
-            System.out.println("유저 입력 대기중:");
-            String userInput = scanner.nextLine();
-            System.out.println(userInput);;
-            Thread.sleep(1000);
+//        Scanner scanner = new Scanner(System.in);
+//        for ( ; ; ) {
+//            System.out.println("유저 입력 대기중:");
+//            String userInput = scanner.nextLine();
+//            System.out.println(userInput);;
+//            if (userInput.equals("exit")) {
+//                break;
+//            }
+//            Thread.sleep(1000);
+//        }
+//        System.out.println("무한루프 탈출");
+
+        // 증감식의 변화 (2씩 증가)
+        for (int i = 0; i < 10 ; i = i + 2){
+            System.out.println(i); // 0 2 4 6 8
+        }
+        System.out.println("반복끝");
+
+        // iterator (=반복자) 여러개인 경우
+        for (int i = 0, j = 0; i<10 && j<10; i++, j++) {
+            System.out.println(i + " " +j);
         }
     }
 }
+
+
+
+
+

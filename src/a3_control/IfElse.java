@@ -9,7 +9,7 @@ public class IfElse {
         if (a > 5) { // 조건이 거짓이면 실행되는 코드가 없음
             System.out.println(a);
         }
-        // it문의 기본형태2 : if() {} else {}
+        // if문의 기본형태2 : if() {} else {}
         if (a > 5) {
             System.out.println(a);
         } else {
