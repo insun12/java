@@ -1,0 +1,35 @@
+package a3_control;
+import java.util.Scanner;
+
+public class ForLoop {
+    public static void main(String[] args) throws InterruptedException {
+        // 반복 제어문
+        // For
+        // 기본형태
+//        for (초기식;조건식;증감식) {
+//            실행구문
+        // }
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+        System.out.println("반복끝");
+        for (int i = 10; i > 0; i--) {
+            System.out.println(i);
+        }
+        System.out.println("반복끝");
+
+        // 컴파일에 에러가 발생하지 않지만 무한루프에 빠지게 되므로 사용X
+        // 무한루프를 설계해도 적절한 Sleep과 리소스 관리를 동반하면 문제없음!!
+        // for (; ; ) {
+        // System.out.println("무한루프");
+        // }
+        // 안전한 무한루프
+        Scanner scanner = new Scanner(System.in);
+        for ( ; ; ) {
+            System.out.println("유저 입력 대기중:");
+            String userInput = scanner.nextLine();
+            System.out.println(userInput);;
+            Thread.sleep(1000);
+        }
+    }
+}
