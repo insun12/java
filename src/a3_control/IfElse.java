@@ -23,11 +23,14 @@ public class IfElse {
         int userAge = scanner.nextInt();
         if (userAge >= 20 && userAge <= 29) {
             System.out.println("20대");
-        } else if (userAge >= 30 && userAge <= 39) {
+        }
+        else if (userAge >= 30 && userAge <= 39) {
             System.out.println("30대");
-        } else if (userAge >= 40 && userAge <= 49) {
+        }
+        else if (userAge >= 40 && userAge <= 49) {
             System.out.println("40대");
-        } else {
+        }
+        else {
             System.out.println("나머지");
         }
         scanner.nextLine(); // Scanner가 가지고 있는 엔터버퍼를 비워주는 역할
