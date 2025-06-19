@@ -15,6 +15,7 @@ public class IfElse {
         } else {
             System.out.println("조건은 거짓");
         }
+
         // if문의 기본형태3 : if() {} else if() {} else {}
         // 나이를 입력하면 연령대를 출력하는 조건문
         // 나이 입력을 동적으로(=유저입력) 하기 위해 외부라이브러리가 필요함!!
@@ -40,5 +41,30 @@ public class IfElse {
         System.out.println(userName);
         System.out.println("끝");
         scanner.close(); // 스캐너 객체를 메모리에서 삭제시킴
+
+        // if문의 중복
+        int value1 = 5;
+        int value2 = 3;
+        if (value1 > 4) {
+            if (value2 < 2) {
+                System.out.println("실행1");
+            }else {
+                    System.out.println("실행2");
+                }
+            }else {
+                System.out.println("실행3");
+            }
+        // if문의 code drilling 이슈
+        if(true) {
+            if (true) {
+                if (true) {
+                    if (true) {
+                        if (true) {
+                            // 가독성을 떨어뜨리므로 좋지 않은 코딩방법
+                        }
+                    }
+                }
+            }
+        }
     }
 }
