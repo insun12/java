@@ -39,26 +39,26 @@ public class ForLoop {
 //        System.out.println("무한루프 탈출");
 
         // 증감식의 변화 (2씩 증가)
-        for (int i = 0; i < 10 ; i = i + 2){
+        for (int i = 0; i < 10; i = i + 2) {
             System.out.println(i); // 0 2 4 6 8
         }
         System.out.println("반복끝");
 
         // iterator (=반복자) 여러개인 경우
-        for (int i = 0, j = 0; i<10 && j<10; i++, j++) {
-            System.out.println(i + " " +j);
+        for (int i = 0, j = 0; i < 10 && j < 10; i++, j++) {
+            System.out.println(i + " " + j);
         }
         System.out.println("반복끝");
 
         // for문 밖에서 iterator를 참조해야만 한다면 아래처럼..
         int i;
-        for (i=0; i<10; i++) {
+        for (i = 0; i < 10; i++) {
             // 실행코드
         }
         System.out.println("iterator의 최종값은?");
         System.out.println(i);
-        }
     }
+}
 
 
 

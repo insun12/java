@@ -9,7 +9,7 @@ public class SwitchCase {
         //     case 값1 : 실행코드 break;
         //     case 값2 : 실행코드 break;
         //     default: 실행코드
-         // }
+             // }
         int a = 2;
         switch (a) {
             case 1:
