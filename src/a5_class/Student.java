@@ -22,7 +22,8 @@ public class Student {
         this.age = age;
     }
 
-    public Student(String name, int age, String address, String gender, double scoreMath, double scoreHistory, double scoreMusic) {
+    public Student(String name, int age, String address, String gender, double scoreMath,
+                   double scoreHistory, double scoreMusic) {
         this.name = name;
         this.age = age;
         this.address = address;
@@ -55,7 +56,7 @@ public class Student {
         ==> 이것을 클래스의 은닉화 (=Capsulization)이라고 함!!
         * */
 //        if(문자열안에 숫자가 포함되어 있다면) {
-//            System.out.println("에러발생. 이름안에 숫자가 있씁니다" );
+//            System.out.println("에러발생. 이름안에 숫자가 있습니다" );
 //            // 예외발생~
 //        } else if (빈문자열이라면) {
 //            System.out.println("에러발생. 이름이 없음.");
