@@ -24,7 +24,6 @@ public class SwitchCase {
             default:
                 System.out.println("D");
         }
-
         Scanner scanner = new Scanner(System.in); // Scanner 기능을 활성화
         System.out.println("요일을 입력해주세요:");
         String day = scanner.nextLine(); // 문자열 유저입력

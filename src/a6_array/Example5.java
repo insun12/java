@@ -15,6 +15,14 @@ public class Example5 {
         System.out.println(checkMember(members, str));
     }
     public static String checkMember(String[] members, String str) {
-        return "";
+        if (members == null || str == null) {
+            return "회원가입해주세요";
+        }
+        for (String member : members) {
+            if (member != null && member.equalsIgnoreCase(str)) {
+                return str + "님 환영합니다";
+            }
+        }
+            return "회원가입해주세요";
+        }
     }
-}
