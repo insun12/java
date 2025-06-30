@@ -10,7 +10,7 @@ public class Example4 {
     }
     public static int getMax(int[] numbers) {
         int max = 0;
-        for (int i = 1; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] > max) {
                 max = numbers[i];
             }

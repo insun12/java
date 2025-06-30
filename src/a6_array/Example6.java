@@ -17,6 +17,6 @@ public class Example6 {
         for (int i = chars.length - 1; i >= 0; i--) {
             result += chars[i];
         }
-        return null;
+        return result;
     }
 }
