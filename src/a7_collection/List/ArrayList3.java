@@ -86,7 +86,7 @@ public class ArrayList3 {
         // #14. iterator 컬렉션 요소를 순차적으로 탐색
         Iterator<Integer> iterator = aList2.iterator();
         // 탐색자는 다음 요소가 존재하면 true, 끝에 도달했으면 false리턴
-        // 탐색자는 일종의 자료주고상의 로봇(처음부터 끝까지 탐색하는 기능)
+        // 탐색자는 일종의 자료를 주고 상의 로봇(처음부터 끝까지 탐색하는 기능)
         // 자동으로 끝을 알려주기 때문에 while문에서도 안전함 (무한루프X)ffss
         while(iterator.hasNext()) {
             Integer a = iterator.next();
