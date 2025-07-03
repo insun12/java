@@ -17,7 +17,7 @@ class D {
 
 public class Object_3 {
     public static void main(String[] args) {
-    // Object클래스의 equals메서드와 오버라이드한 메서드의 차이 예제
+    // Object 클래스의 equals 메서드와 오버라이드한 메서드의 차이 예제
         C c1 = new C("Hello");
         C c2 = new C("Hello");
         System.out.println(c1 == c2); // false

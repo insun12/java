@@ -2,7 +2,7 @@ package a9_inheritance.Super;
 
 class AA {
     AA() {
-        System.out.println("A생성자");
+        System.out.println("A 생성자");
     }
 }
 class BB extends AA {
@@ -11,13 +11,13 @@ class BB extends AA {
         // 부모의 기본생성자는 자동으로 호출되기때문에 항상 자식클래스의 영역에는
         // 부모클래스의 영역이 생성됨
         super();
-        System.out.println("B생성자");
+        System.out.println("B 생성자");
     }
 }
 class CC {
     // 기본생성자가 없음
     CC(int a) {
-        System.out.println("C생성자");
+        System.out.println("C 생성자");
     }
 }
 class DD extends CC {
