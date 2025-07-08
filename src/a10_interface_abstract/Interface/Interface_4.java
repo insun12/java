@@ -1,7 +1,7 @@
 package a10_interface_abstract.Interface;
 
 // 인터페이스의 객체 생성 #2. 익명이너클래스를 이용한 객체 생성
-interface C1 {
+interface   C1 {
     int a = 3;
     void abc();
 }
