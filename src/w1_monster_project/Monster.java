@@ -1,3 +1,5 @@
+package w1_monster_project;
+
 public class Monster {
     private String name;
     private int hp;

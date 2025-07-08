@@ -1,0 +1,39 @@
+4단계 목표: 속성 몬스터 구현하기 (상속)
+이제 객체 지향의 꽃, **상속(Inheritance)**을 사용해 보겠습니다. 
+모든 몬스터의 공통적인 특징은 Monster 클래스에 그대로 두고, 
+특정 타입의 몬스터(예: 불 속성)만 갖는 새로운 특징을 추가해 보겠습니다.
+
+당신이 해야 할 일은 다음과 같습니다:
+
+FireMonster.java 파일을 새로 만드세요.
+
+FireMonster 클래스가 Monster 클래스를 상속받도록 extends 키워드를 사용하세요.
+
+FireMonster만의 새로운 속성을 추가하세요.
+
+fireSkillDamage (불 속성 스킬 데미지): int 타입
+
+FireMonster의 생성자를 만드세요.
+
+이 생성자는 name, hp, attack, defense 그리고 fireSkillDamage까지 파라미터로 받아야 합니다.
+
+부모 클래스(Monster)의 생성자를 호출하기 위해 super()를 사용해야 합니다.
+
+GameManager를 수정하여 FireMonster 객체를 생성하고, 몬스터 목록에 추가하여 잘 작동하는지 확인해 보세요.
+
+아래의 3개의 화염몬스터를 추가로 ArrayList에 추가합니다.
+
+
+
+## FireMonster 샘플 목록
+1. 이프리트 (Ifrit)
+특징: 불의 정령으로, 강력한 화염 마법을 사용합니다.
+능력치: name: "이프리트", hp: 140, attack: 22, defense: 18, fireSkillDamage: 35
+
+2. 헬하운드 (Hellhound)
+특징: 지옥의 사냥개로, 빠르고 맹렬한 불꽃 공격이 특징입니다.
+능력치: name: "헬하운드", hp: 90, attack: 28, defense: 10, fireSkillDamage: 25
+
+3. 파이어 골렘 (Fire Golem)
+특징: 용암으로 이루어진 골렘으로, 일반 골렘보다 공격적입니다.
+능력치: name: "파이어 골렘", hp: 180, attack: 25, defense: 22, fireSkillDamage: 20

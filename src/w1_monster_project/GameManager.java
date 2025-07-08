@@ -1,3 +1,5 @@
+package w1_monster_project;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -14,7 +16,6 @@ public class GameManager {
         Monster monster7 = new Monster("리치", 130, 35, 12);
         Monster monster8 = new Monster("키메라", 200, 30, 20);
         Monster monster9 = new Monster("드래곤", 300, 40, 30);
-        Monster monster10 = new Monster("이프리트", 140, 22, 18);
 
         ArrayList<Monster> monsterList = new ArrayList<>();
         monsterList.add(new Monster("슬라임", 30, 8, 5));
@@ -27,6 +28,9 @@ public class GameManager {
         monsterList.add(new Monster("리치", 130, 35, 12));
         monsterList.add(new Monster("키메라", 200, 30, 20));
         monsterList.add(new Monster("드래곤", 300, 40, 30));
+        monsterList.add(new FireMonster("이프리트", 140, 22, 18, 35));
+        monsterList.add(new FireMonster("헬하운드", 90, 28, 10, 25));
+        monsterList.add(new FireMonster("파이어 골렘", 180, 25, 22, 20));
 
         for (int i = 0; i < monsterList.size(); i++) {
             System.out.print(i + ": ");
