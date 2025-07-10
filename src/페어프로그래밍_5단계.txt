@@ -1,0 +1,45 @@
+5단계 목표: Monster.java 수정하기 (추상 클래스로 변경)
+
+Monster.java를 모든 몬스터의 **'미완성 설계도'**로 만드는 작업입니다.
+
+1. Monster.java를 추상클래스로 변경하세요.
+클래스 내부에 내용이 없는 attack 추상 메서드를 추가하세요. 
+이 코드는 "Monster를 상속받는 자식은 반드시 attack 메서드를 자신의 방식대로 구현해야 한다"는 강력한 규칙이 됩니다.
+public abstract int attack(Monster target); 
+
+2. NormalMonster.java 파일 새로 만들기
+기존의 일반 몬스터들을 위한 **'완성된 설계도'**를 만드는 작업입니다.
+NormalMonster.java 파일을 새로 생성하고 Monster를 상속받게 하세요.
+생성자를 만들어 주세요. 부모인 Monster의 생성자를 super()로 호출하기만 하면 됩니다.
+Monster가 강제한 attack 메서드를 @Override 하여 구현하세요.
+@Override
+public int attack(Monster target) {
+    // ## 로직 설명
+    // 20%의 확률로 치명타가 발동하는지 확인합니다.
+    // 치명타가 터지면, 공격력 * 2를 하여 피해량을 두 배로 만들고 상대의 방어도를 무시합니다. 특별한 메시지를 출력합니다.
+    // 치명타가 터지지 않으면, 기본계산 피해량(공격력 - 상대방어력)만 반환됩니다.
+}
+
+3. FireMonster.java 수정하기
+Monster가 강제한 attack 메서드를 @Override 하여 구현하세요.
+@Override
+public int attack(Monster target) {
+    // 이제 attack 메서드는 먼저 기본 공격을 항상 수행하고 피해량을 계산합니다.
+    // 그 다음 35% 확률로 스킬이 발동됩니다
+    // 스킬이 발동되면 기존에 계산된 damage에 스킬 피해량을 누적하여 더해줍니다.
+    // 따라서 스킬은 이제 공격을 대체하는 것이 아닌, 강력한 '추가타' 개념이 됩니다.
+    // 최종 계산된 피해량을 반환합니다.
+}
+
+4. GameManager.java 수정하기
+기존 new Monster(...) 코드는 Monster가 추상 클래스가 되어 오류가 발생합니다. 이를 해결하세요.
+while문 안의 복잡한 데미지 계산 로직을 attack 메서드를 사용하여 변경하세요.
+
+
+<확률 코드 사용법>
+// Math.random()은 0.0 이상 1.0 미만의 실수를 반환합니다.
+// 따라서 if (Math.random() < 0.2) 코드는 20% 확률로 true가 됩니다.
+
+if (Math.random() < 0.2) {
+    // 20% 확률로 실행될 코드
+}
